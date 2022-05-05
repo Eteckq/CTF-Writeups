@@ -227,6 +227,8 @@ https://avatar-generator.france-cybersecurity-challenge.fr/index.php?seed=304704
 ```
 
 1 seconde après avoir injecté le payload, le script est bien lancé !
-Il ne reste plus qu'a récupèrerle cookie de l'admin, et de nous rendre sur /admin
+Il ne reste plus qu'à envoyer cette url à l'admin dans le formulaire de contact, attendre qu'il execute la page, et récupérer son cookie.
+
+Nous pouvons ensuite nous rendre sur la page /admin
 
 <img src="images/a7.PNG" height="100%" width="100%">
