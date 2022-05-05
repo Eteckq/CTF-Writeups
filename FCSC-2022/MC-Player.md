@@ -173,7 +173,7 @@ Nous pouvons voir un endpoint /flag dans notre application, qui retourne le flag
 
 Le seul autre endroit où le flag est accessible est via la constante FLAG définis au tout début du code
 
-En remontant tous les prototypes d'objets/fonctions, nous pouvons théoriquement accèder à toutes les méthodes, objects, constantes créés une application python
+En remontant tous les prototypes d'objets/fonctions, nous pouvons théoriquement accèder à toutes les méthodes, objects, constantes créés dans une application python
 
 Nous devons maintenant trouver un moyen de remonter jusqu'au FLAG
 
