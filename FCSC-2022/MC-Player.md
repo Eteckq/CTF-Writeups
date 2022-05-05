@@ -9,17 +9,17 @@ Nous savons donc directement que nous sommes sur un serveur web en Python, utili
 
 ## Lancement de l'application
 
-<img src="images/mcplayer_app.png" height="100%" width="100%">
+<img src="images/mcplayer_app.PNG" height="100%" width="100%">
 
 Nous avons affaire à un simple "status checker", pour les serveurs Minecraft
 
 J'essaie dans un premier temps de mettre un serveur existant, avec des joueurs connectés afin de voir le résultat:
 
-<img src="images/mcplayer_ping.png" height="100%" width="100%">
+<img src="images/mcplayer_ping.PNG" height="100%" width="100%">
 
 Au bout de quelques secondes, nous avons un résultat. La plupart des serveurs Minecraft ne retournent pas la liste de leur joueurs connectés, mais plutôt un message custom de ce style:
 
-<img src="images/results.png" height="100%" width="100%">
+<img src="images/results.PNG" height="100%" width="100%">
 
 Nous verrons juste après que notre application ne gère pas les lignes composées de + 20 caractères, il est donc normal que nous ne voyons pas de joueurs connectés via notre application
 # Analyse du code source
