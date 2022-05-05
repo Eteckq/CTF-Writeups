@@ -56,7 +56,7 @@ Une des solutions à l'air plutôt intéressante. Explication de l'exfiltration:
 
 - Nous créons une nouvelle font-family (à partir d'une police locale, car une règle CSP nous empêche d'importer une police custom) qui affecte uniquement un seul caractère, par exemple 'a'
 
-- Nous faisons en sorte que cette police est une taille très grande
+- Nous faisons en sorte que cette police ai une taille très grande
 
 - Nous appliquons cette police sur la balise #p1, qui contient le mot de passe à exfiltrer
 
@@ -91,6 +91,7 @@ Example du payload pour le caractère 'a'
 ```
 
 Le ```background: yellow;``` est important, sinon l'url de la callback n'est jamais appellé
+l'ajout de ```:horizontal``` permet de vérifier que la scrollbar horizontal existe (donc que notre caractère a overflow) afin de trigger la callback
 
 # Récapitulatif
 
@@ -106,7 +107,7 @@ Je n'ai pas de meilleure piste, alors je m'y met
 
 # Exploitation
 
-Je ne voulais pas tester tous les caractères et envoyer les payloads 1 par 1 à la main, j'ai donc fais un script pour automatiser le tout. C'est un script très basique, qui envois un style, le submit pour l'admin, et attends quelques secondes avant d'envoyé le prochain.
+Je ne voulais pas tester tous les caractères et envoyer les payloads 1 par 1 à la main, j'ai donc fais un script pour automatiser le tout. C'est un script très basique, qui envois un style, le submit pour l'admin, et attends quelques secondes avant d'envoyer le prochain.
 
 La callback est sur un intercepteur en ligne. J'avais la flemme d'upload mon script sur un serveur et de gérer la callback
 
@@ -114,7 +115,7 @@ La callback est sur un intercepteur en ligne. J'avais la flemme d'upload mon scr
 
 à la fin de l'execution, je n'avais pas 12 caractères. Je me suis rendu compte que j'envoyais mes payloads trop rapidement, et j'écrasais certains styles avant que l'admin passe dessus.
 
-J'ai relancer mon script avec un temps de 20 secondes entre les payloads, pour être sur que l'admin passe sur tous (oui, le script a duré 20 minutes)
+J'ai relancer mon script avec un temps de 20 secondes entre les payloads, pour être sur que l'admin passe sur tout (oui, le script a duré 20 minutes)
 
 A la fin, j'ai bien leak 12 char (ouf, pas de char en double..): ```hkmquGIOST24```
 
