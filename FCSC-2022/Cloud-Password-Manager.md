@@ -7,7 +7,7 @@ L'```admin``` étant injoignable, on vous demande d'estimer très rapidement si 
 
 Pas de source pour ce challenge. Nous passons directement à l'application
 
-<img src="images/cp.PNG" height="100%" width="100%">
+<img src="images/cp.png" height="100%" width="100%">
 
 Le site est composé d'une page d'accueil, avec un message des hackeurs.
 
@@ -19,7 +19,7 @@ Nous apprenons aussi que l'admin a son mot de passe stocké sur sa page My Passw
 
 Lorsque nous accèdons aux pages "My Passwords" ou "Flag", une connexion est requise.
 
-<img src="images/cp2.PNG" height="100%" width="100%">
+<img src="images/cp2.png" height="100%" width="100%">
 
 Après plusieurs tentatives de création de mot de passe, nous découvrons que la policy suivante est mise en place:
 
@@ -45,7 +45,7 @@ Je ne passerais pas les détails d'une injection css, il y a beaucoup de contenu
 
 La première chose à regarder est si nous pouvons extraire du contenu interessant dans les balises/attributs
 
-<img src="images/cp3.PNG" height="100%" width="100%">
+<img src="images/cp3.png" height="100%" width="100%">
 
 Malheureusement, le mot de passe est uniquement stocké dans l'HTML, et les balises n'ont pas l'air de contenir des informations intéressantes
 

@@ -44,7 +44,7 @@ setTimeout(function () {
 Le premier élément interressant est dans app.js
 En effet, nous pouvons voir à la ligne 66 que si nous ajoutons #debug à la fin de notre URL, nous pouvons set la variable ```debug``` à ```true```
 
-<img src="images/a1.PNG" height="100%" width="100%">
+<img src="images/a1.png" height="100%" width="100%">
 
 Cette variable est utilisée pour la gestion des erreurs dans les paramètres.
 
@@ -84,7 +84,7 @@ Test d'un 1er payload, avec la valeur du paramètre 'secondary' incorrecte:
 https://avatar-generator.france-cybersecurity-challenge.fr/index.php?seed=304704&primary=%23e67e22&secondary=<h1 style="color: red">#debug
 ```
 
-<img src="images/a2.PNG" height="100%" width="100%">
+<img src="images/a2.png" height="100%" width="100%">
 
 La balise n'est pas interprêtée et est ajoutée en tant que texte.
 
@@ -92,7 +92,7 @@ J'arrive finalement après quelques essais à construire un payload où ma balis
 ```</><h1>hey```
 
 
-<img src="images/a3.PNG" height="100%" width="100%">
+<img src="images/a3.png" height="100%" width="100%">
 
 Nous avons enfin notre injection !
 
@@ -110,7 +110,7 @@ La première chose à essayer est l'inline script
 
 Cependant, une CSP nous empêche d'executer du code "inline":
 
-<img src="images/a4.PNG" height="100%" width="100%">
+<img src="images/a4.png" height="100%" width="100%">
 
 ```
 Directive CSP:
@@ -124,7 +124,7 @@ Je me penche sur l'url ```rawcdn.githack.com/caroso1222/notyf/v2.0.1/dist/```
 
 Elle permet en effet d'autoriser l'inclusion d'un script qui vient de l'exterieur, et qui permet apparement de créer des notifications
 
-<img src="images/a5.PNG" height="100%" width="100%">
+<img src="images/a5.png" height="100%" width="100%">
 
 # Bypass CSP
 
@@ -190,7 +190,7 @@ au lieu de https://foo.fr/bar.js
 
 Nous allons changer la baseUrl du site, afin d'importer un script custom à la place de "assets/js/stats.js", qui va être chargé et executé 1 seconde après la page
 
-<img src="images/a6.PNG" height="100%" width="100%">
+<img src="images/a6.png" height="100%" width="100%">
 
 ## Payload
 
@@ -229,4 +229,4 @@ https://avatar-generator.france-cybersecurity-challenge.fr/index.php?seed=304704
 1 seconde après avoir injecté le payload, le script est bien lancé !
 Il ne reste plus qu'a récupèrerle cookie de l'admin, et de nous rendre sur /admin
 
-<img src="images/a7.PNG" height="100%" width="100%">
+<img src="images/a7.png" height="100%" width="100%">
