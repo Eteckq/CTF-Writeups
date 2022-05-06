@@ -56,7 +56,7 @@ Une des solutions à l'air plutôt intéressante. Explication de l'exfiltration:
 
 - Nous créons une nouvelle font-family (à partir d'une police locale, car une règle CSP nous empêche d'importer une police custom) qui affecte uniquement un seul caractère, par exemple 'a'
 
-- Nous faisons en sorte que cette police ai une taille très grande
+- Nous faisons en sorte que cette police ait une taille très grande
 
 - Nous appliquons cette police sur la balise #p1, qui contient le mot de passe à exfiltrer
 
