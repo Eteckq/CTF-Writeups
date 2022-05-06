@@ -220,7 +220,7 @@ obj.__class__._load_form_data.__globals__['json'].JSONEncoder.default.__globals_
 
 (obj correspond à request)
 
-je constuis donc mon payload afin de correspondre à ce path, ce qui me permet de récupérer le flag
+je construis donc mon payload afin de correspondre à ce path, ce qui me permet de récupérer le flag
 
 ## Conclusion
 
