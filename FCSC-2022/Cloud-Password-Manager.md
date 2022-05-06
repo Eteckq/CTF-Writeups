@@ -9,7 +9,7 @@ Pas de source pour ce challenge. Nous passons directement à l'application
 
 <img src="images/cp.PNG" height="100%" width="100%">
 
-Le site est composé d'une page d'accueil, avec un message des hackeurs.
+Le site est composé d'une page d'accueil, avec un message des hackers.
 
 La première information que nous pouvons récupèrer ici est le sha256 du mot de passe:
 
