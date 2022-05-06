@@ -35,7 +35,7 @@ et aussi de créer des styles css custom
 
 <img src="images/cp.gif" height="100%" width="100%">
 
-Nous pouvons aussi envoyer le script à l'admin, qui le verifiera
+Nous pouvons aussi envoyer ce style css à l'admin, qui le verifiera (en l'executant sur sa page My Passwords)
 
 # CSS Injection
 
