@@ -220,6 +220,12 @@ je prépare ensuite la balise ```base```
 Avec cette balise, la page va maintenant transformer tous les chemins relatif en mettant l'URL de la racine de mon repo en base
 
 
+Enchainement final:
+
+- Le site se charge, et load tout ses scripts
+- Nous injectons notre balise de changement de base vers notre repo git
+- (1s) Le site charge le script (via stats.loader.js) assets/js/stats.js et utilise notre base (repo git custom)
+
 
 Payload final:
 ```
