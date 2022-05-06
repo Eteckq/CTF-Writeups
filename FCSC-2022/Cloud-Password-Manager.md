@@ -62,7 +62,7 @@ Une des solutions à l'air plutôt intéressante. Explication de l'exfiltration:
 
 - Si le mot de passe ne contient pas le caractère ciblé, la police ne se chargera pas. Par contre, si le mot de passe contient un 'a', alors la police s'appliquera sur ce caractère.
 
-En ajoutant des règles css du style "no-wrap" et que l'on autorise l'overflow, cela aura pour effet de créer une scrollbar.
+En ajoutant des règles css du style "no-wrap" et que l'on autorise l'overflow, cela aura pour effet de créer une scrollbar (car notre police a une taille très grande)
 
 Si une scrollbar est présente, nous pouvons trigger une callback
 
