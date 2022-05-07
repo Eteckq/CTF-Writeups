@@ -132,7 +132,7 @@ Liste des variables contenu dans le template:
 
 Afin de confirmer que nous sommes bien sur un exploit de type SSTI, je cherche les paramètres qui peuvent être manipulés dans le template
 
-## hostame
+## hostname
 - Ce paramètre doit contenir une adresse valide, et ne peut donc pas être manipulé
 
 ## status.players.max
